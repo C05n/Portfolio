@@ -1,0 +1,6 @@
+.projets {
+   @include absolute-center;
+   display: grid;
+   grid-template-columns: 130px calc(100% - 130px);
+   grid-template-rows: 64vh 1vh 20vh;
+}

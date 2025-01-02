@@ -1,0 +1,18 @@
+.fade-enter {
+   z-index: -1;
+   transform: translate(-200%);
+
+   &-active {
+      transform: translate(0);
+      transition: transform 600ms;
+   }
+}
+
+.fade-exit {
+   z-index: -1;
+   transform: translate(0);
+   &-active {
+      transform: translate(200%);
+      transition: transform 900ms;
+   }
+}

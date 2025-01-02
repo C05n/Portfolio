@@ -1,0 +1,11 @@
+a {
+   margin: 5px 5px;
+   padding: 10px 20px;
+   color: black;
+   font-weight: 500;
+   cursor: pointer;
+   &.active {
+      background-color: rgba($color: #ffffff, $alpha: 1);
+      border-radius: 30px;
+   }
+}

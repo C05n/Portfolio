@@ -1,0 +1,7 @@
+.homepage {
+   @include absolute-center;
+   @include blured-background(10px);
+
+   height: 100%;
+   width: 100%;
+}

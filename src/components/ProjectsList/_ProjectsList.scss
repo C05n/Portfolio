@@ -1,0 +1,63 @@
+.projetsSelection {
+   position: relative;
+
+   @include blured-background(25px);
+   margin-right: 10px;
+
+   width: calc(100% - 10px);
+   height: 100%;
+
+   overflow: hidden;
+
+   grid-row: span 3;
+   z-index: 3;
+
+   .topside {
+      position: absolute;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      width: 100%;
+      height: 50px;
+   }
+
+   .projetsList {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .project {
+         .minia {
+            display: flex;
+            text-align: center;
+            height: 100px;
+            width: 120px;
+            img {
+               max-width: 100px;
+               margin: auto;
+            }
+         }
+      }
+   }
+   .line {
+      height: 1px;
+      width: 90px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-left: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   .botside {
+      position: absolute;
+      bottom: 0px;
+
+      background-color: rgba(0, 0, 0, 0.3);
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width: 100%;
+      height: 50px
+   }
+}
