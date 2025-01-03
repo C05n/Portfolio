@@ -1,16 +1,24 @@
-.projetsOverview {
+.projectsView {
    @include blured-background(25px);
-   margin-bottom: 10px;
+   grid-column: 1 / span 12;
+   grid-row: span 8;
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   .project_card {
+      @include blured-background(10px);
+      display: flex;
+      text-align: center;
+      width: 250px;
+      height: 160px;
 
-   width: 100%;
-   height: 100%;
-
-   grid-column: 2;
-   grid-row: 1;
-   overflow: scroll;
-   img {
-      width: 95%;
-      max-height: 95%;
-      padding-left: 5%;
+      &-img {
+         box-sizing:border-box;
+         margin: 10px auto;
+         margin-bottom: 45px;
+         border-radius: 5px;
+      }
    }
 }

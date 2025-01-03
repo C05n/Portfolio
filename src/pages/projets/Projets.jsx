@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import projectsData from '../../assets/data/projets.json';
-import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import ProjectsOverview from '../../components/ProjectsOverview/ProjectsOverview';
 import ProjectsDescription from '../../components/ProjectsDescription/ProjectsDescription';
 
@@ -13,8 +12,7 @@ function Projets() {
     };
    return (
       <section className="projets">
-         <ProjectsList projects={projects} onProjectClick={handleProjectClick} />
-         <ProjectsOverview activeProject={activeProject} />
+         <ProjectsOverview projects={projects} onProjectClick={handleProjectClick} />
          <ProjectsDescription activeProject={activeProject} />
       </section >
    )

@@ -16,34 +16,35 @@
       left: 0;
       height: 100vh;
       width: 100vw;
-      background-image: url("../assets/background/vadim-sadovski-o5xxn_PeOgU-unsplash.jpg");
+      background-image: url("../assets/background/buddha-elemental-3d-br5JFHhkoIA-unsplash.jpg");
       background-size: cover;
       background-position: center;
       overflow: hidden;
       z-index: -2;
       &::before {
          content: "";
-         border: 10px solid transparent;
+         border: 30px solid transparent;
          border-color: rgba($color: #000000, $alpha: 0.40);
          position: absolute;
          top: 0;
          left: 0;
          right: 0;
          bottom: 0;
-         height: calc(100vh - 20px);
-         width: calc(100vw - 20px);
+         height: calc(100vh - 60px);
+         width: calc(100vw - 60px);
       }
       .App-content {
-         margin: 10px;
+         margin: 30px;
          padding: 40px;
          border: 1px solid #fff;
-         height: calc(100vh - 20px);
-         width: calc(100vw - 20px);
+         height: calc(100vh - 60px);
+         width: calc(100vw - 60px);
          .section_div {
             position: relative;
+            top: 50px;
             width: 100%;
-            height: calc(100% - 88px);
-            max-width: 1600px;
+            height: calc(100% - 188px);
+            max-width: 1440px;
             margin: 0 auto;
          }
       }
