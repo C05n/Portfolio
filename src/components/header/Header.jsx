@@ -5,7 +5,6 @@ function Header() {
       <header>
          <nav>
             <HeaderLink NavPath="/" NavName="Home" />
-            <HeaderLink NavPath="/About" NavName="A propos" />
             <HeaderLink NavPath="/Projets" NavName="Projets" />
             <HeaderLink NavPath="/Contact" NavName="Contact" />
          </nav>
