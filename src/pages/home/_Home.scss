@@ -1,0 +1,9 @@
+@use '../../styles/Mixin' as mixin;
+
+.homepage {
+   @include mixin.absolute-center;
+   @include mixin.blured-background(10px);
+
+   height: 100%;
+   width: 100%;
+}

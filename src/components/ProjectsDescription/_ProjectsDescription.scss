@@ -1,0 +1,17 @@
+@use '../../styles/Mixin' as mixin;
+
+.projetsDescription {
+   @include mixin.blured-background(25px);
+
+   width: 100%;
+   height: 100%;
+
+   grid-column: 3 / span 8;
+   grid-row: span 3;
+   p {
+      color: white;
+      font-size: 18px;
+      margin-top: 10px;
+      margin-left: 10px;
+   }
+}

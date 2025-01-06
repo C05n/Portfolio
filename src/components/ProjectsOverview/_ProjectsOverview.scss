@@ -1,0 +1,71 @@
+@use '../../styles/Mixin' as mixin;
+
+.projectsView {
+   @include mixin.blured-background(25px);
+   grid-column: 1 / span 12;
+   grid-row: span 9;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-content: center;
+   justify-content: center;
+   .project_card {
+      width: auto;
+      height: 20dvh;
+      @include mixin.card-background;
+      cursor: pointer;
+      // padding: 5px;
+      margin: 1%;
+      // border: 1px solid white;
+      max-width: 30%;
+      overflow: hidden;
+      flex: 1 1 auto 20dvh;
+      box-shadow:  0px 0px 20px 5px rgba(#000000, 0.5);
+      &.active {
+         box-shadow: 0px 0px 40px 10px rgba(#ffffff, 1);
+         height: 20.8dvh;
+      }
+      &-img {
+         width: auto;
+         max-height: 100%;
+         border-radius: 5px;
+         // border: 1px solid black;*
+      }
+      &-title {
+         position: absolute;
+         top: 40%;
+         left: 50%;
+         width: 100%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         color: #ffffff; 
+         text-shadow: 0px 0px 10px rgba(#000000, 1);
+         font-size: 18px;
+         font-weight: 700;
+         z-index: 2;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         display: block;
+         width: 101%;
+         height: 101%;
+         background-color: #000000;
+         opacity: 0.5;  
+         border-radius: 5px;
+         z-index: 1;
+      }
+      &-title {
+         margin-top: 20px;
+         color: rgb(255, 255, 255);
+      }
+   }
+
+   @media screen and (max-width: 1060px) {
+      .project_card {
+         height: 16dvh;
+      }
+   }
+}

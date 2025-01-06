@@ -1,0 +1,9 @@
+@use '../../styles/Mixin' as mixin;
+
+.projets {
+   @include mixin.absolute-center;
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(12, 1fr);
+   gap: 50px;
+}

@@ -1,0 +1,65 @@
+[
+      {
+         "id": 1,
+         "title": "Riding cities",
+         "miniature": "src/assets/data/miniatures/Riding_cities_miniature.png",
+         "cover": "src/assets/data/cover/Riding_cities_cover.png",
+         "description": "Projet fictif pour une association sportive promouvant le Skate en région, site vitrine en Html / CSS."
+      },
+      {
+         "id": 2,
+         "title": "Booki",
+         "miniature": "src/assets/data/miniatures/Booki_miniature.png",
+         "cover": "src/assets/data/cover/Booki_cover.png",
+         "description": ""
+      },
+      {
+         "id": 3,
+         "title": "Ohmyfood",
+         "miniature": "src/assets/data/miniatures/Ohmyfood_miniature.png",
+         "cover": "src/assets/data/cover/Ohmyfood_cover.png",
+         "description": ""
+      },
+      {
+         "id": 4,
+         "title": "Print it",
+         "miniature": "src/assets/data/miniatures/Print_it_miniature.png",
+         "cover": "src/assets/data/cover/Print_it_cover.png",
+         "description": ""
+      },
+      {
+         "id": 5,
+         "title": "Sophie Bluel",
+         "miniature": "src/assets/data/miniatures/Sophie_bluel_miniature.png",
+         "cover": "src/assets/data/cover/Sophie_bluel_cover.png",
+         "description": ""
+      },
+      {
+         "id": 6,
+         "title": "Kasa",
+         "miniature": "src/assets/data/miniatures/Kasa_miniature.png",
+         "cover": "src/assets/data/cover/Kasa_cover.png",
+         "description": ""
+      },
+      {
+         "id": 7,
+         "title": "Nina Carducci",
+         "miniature": "src/assets/data/miniatures/Nina_carducci_miniature.png",
+         "cover": "src/assets/data/cover/Nina_carducci_cover.png",
+         "description": ""
+      },
+      {
+         "id": 8,
+         "title": "724Events",
+         "miniature": "src/assets/data/miniatures/724Events_miniature.png",
+         "cover": "src/assets/data/cover/724Events_cover.png",
+         "description": ""
+      },
+      {
+         "id": 9,
+         "title": "ArgentBank",
+         "miniature": "src/assets/data/miniatures/ArgentBank_miniature.png",
+         "cover": "src/assets/data/cover/Argentbank_cover.png",
+         "description": ""
+      }
+   ]
