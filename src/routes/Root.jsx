@@ -9,13 +9,11 @@ import Contact from "../pages/contact/Contact"
 
 
 const AppRoutes = () => {
-
    const location = useLocation();
-   const nodeRef = useRef(null);
 
    return (
       <TransitionGroup className={"section_div"}>
-         <CSSTransition key={location.key} classNames="fade" timeout={600} nodeRef={nodeRef}>
+         <CSSTransition key={location.key} classNames="fade" timeout={600}>
             <Routes location={location}>
                <Route path="/" element={<Home />} />
                <Route path="/projets" element={<Projets />} />

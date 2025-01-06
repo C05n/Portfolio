@@ -1,7 +1,14 @@
+import InputForm from "../../components/InputForm/InputForm";
+
 function Contact() {
    return (
-     <div className='contact'>
-     </div>
+    
+      <div className="contact_form">
+        <InputForm $type="text" $placeholder="Votre nom" />
+        <InputForm $type="Email" $placeholder="E-mail" />
+        <textarea placeholder=" Votre Message..." rows={20}></textarea>
+        <InputForm $className="contact_form-submit" $type="submit"/>
+      </div>
    );
  }
  
