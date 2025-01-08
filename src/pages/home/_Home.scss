@@ -2,8 +2,58 @@
 
 .homepage {
    @include mixin.absolute-center;
-   @include mixin.blured-background(10px);
-
    height: 100%;
    width: 100%;
+   .devweb-technologies {
+      @include mixin.blured-background(10px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 45%;
+      position: absolute;
+      bottom: 5em;
+      height: 10rem;
+      padding: 20px;
+      article {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         img {
+            width: 50px;
+            margin-bottom: 20px;
+         }
+         h3 {
+            color: white;
+            font-weight: 400;
+         }
+      }
+   }
+
+   .devweb-tools {
+      @include mixin.blured-background(10px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 45%;
+      position: absolute;
+      bottom: 5em;
+      right: 0;
+      height: 10rem;
+      padding: 20px;
+      article {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         img {
+            width: 50px;
+            margin-bottom: 20px;
+         }
+         h3 {
+            color: white;
+            font-weight: 400;
+         }
+      }
+   }
 }

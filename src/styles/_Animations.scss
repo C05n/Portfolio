@@ -1,3 +1,5 @@
+@use './Variables' as var;
+
 .fade-enter {
    z-index: -1;
    transform: translate(-200%);
@@ -14,5 +16,39 @@
    &-active {
       transform: translate(200%);
       transition: transform 900ms;
+   }
+}
+
+@keyframes rotateShadow {
+   0% {
+      box-shadow: -70px 60px 100px rgba($color: var.$linear-color-1, $alpha: 0.50),
+                  70px -60px 100px rgba($color: var.$linear-color-2, $alpha: 0.75),
+                  inset 30px -30px 70px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  inset -30px 30px 70px rgba($color: var.$linear-color-2, $alpha: 0.5);
+   }
+   25% {
+      box-shadow: -70px -60px 100px rgba($color: var.$linear-color-1, $alpha: 0.75),
+                  70px 60px 100px rgba($color: var.$linear-color-2, $alpha: 0.5),
+                  inset 30px 30px 70px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  inset -30px -30px 70px rgba($color: var.$linear-color-2, $alpha: 0.5);
+   }
+   50% {
+      box-shadow: 70px -60px 100px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  -70px 60px 100px rgba($color: var.$linear-color-2, $alpha: 0.75),
+                  inset -30px 30px 70px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  inset 30px -30px 70px rgba($color: var.$linear-color-2, $alpha: 0.5);
+   }
+   75% {
+      box-shadow: 70px 60px 100px rgba($color: var.$linear-color-1, $alpha: 0.75),
+                  -70px -60px 100px rgba($color: var.$linear-color-2, $alpha: 0.5),
+                  inset -30px -30px 70px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  inset 30px 30px 70px rgba($color: var.$linear-color-2, $alpha: 0.5);
+
+   }
+   100% {
+      box-shadow: -70px 60px 100px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  70px -60px 100px rgba($color: var.$linear-color-2, $alpha: 0.75),
+                  inset 30px -30px 70px rgba($color: var.$linear-color-1, $alpha: 0.5),
+                  inset -30px 30px 70px rgba($color: var.$linear-color-2, $alpha: 0.5);
    }
 }

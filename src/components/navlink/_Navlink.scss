@@ -1,3 +1,5 @@
+@use "../../styles/Variables" as var;
+
 a {
    margin: 5px 5px;
    padding: 6px 14px;
@@ -5,19 +7,13 @@ a {
    font-weight: 400;
    font-size: 15px;
    cursor: pointer;
+   text-decoration: none;
    &.active {
-      background-color: rgba($color: #ffffff, $alpha: 1);
       color: transparent;
-      background: linear-gradient(45deg, #ff00ff, #ffd900);
+      background: linear-gradient(45deg, var.$linear-color-1, var.$linear-color-2);
       background-clip: text;
       border-radius: 30px;
-      // border: 1px solid #ffffff;
-      
-         box-shadow: 5px -5px 25px 0px rgba(#ff8000, 1),
-                     -10px 5px 25px 0px rgba(#900590, 1),
-                     // inset -10px 0px 15px 0px rgba(#ff8000, 0.8),
-                     // inset 10px -5px 15px 0px rgba(#900590, 1);
-         // border: 1px solid;
-      
+      box-shadow: 5px -5px 25px 0px var.$linear-color-2,
+                  -10px 5px 25px 0px var.$linear-color-1;
    }
 }

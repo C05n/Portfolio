@@ -1,13 +1,9 @@
-@mixin blured-background($border-radius) {
-   background-color: rgba($color: #939393, $alpha: 0.15);
-   backdrop-filter: blur(5px);
-   border-radius: $border-radius;
-}
+@use "./Variables" as var;
 
-@mixin card-background {
-   background-color: rgba($color: #000000, $alpha: 0.4);
+@mixin blured-background($border-radius) {
+   background: var.$blured-background;
    backdrop-filter: blur(4px);
-   border-radius: 10px;
+   border-radius: $border-radius;
 }
 
 @mixin absolute-center {

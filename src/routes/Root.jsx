@@ -3,7 +3,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useRef } from 'react';
 // 
 import Home from "../pages/home/Home"
-import About from "../pages/about/About"
 import Projets from "../pages/projets/Projets"
 import Contact from "../pages/contact/Contact"
 
@@ -17,7 +16,6 @@ const AppRoutes = () => {
             <Routes location={location}>
                <Route path="/" element={<Home />} />
                <Route path="/projets" element={<Projets />} />
-               <Route path="/about" element={<About />} />
                <Route path="/contact" element={<Contact />} />
             </Routes>
          </CSSTransition>

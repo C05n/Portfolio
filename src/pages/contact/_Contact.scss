@@ -1,11 +1,11 @@
 @use "../../styles/Mixin" as mixin;
+@use "../../styles/Variables" as var;
 
 .contact_form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-top: 6vh ;
         textarea {
             @include mixin.blured-background(10px);
             width: 500px;
@@ -13,12 +13,11 @@
             margin-bottom: 20px;
             box-sizing: border-box;
             font-size: 16px;
-            color: #dfdfdf;
-            border: none;
+            color: var.$contact-font-color;
             resize: none;
             border: 1px solid #00000050;
             &::placeholder {
-                color: #dfdfdf;
+                color: var.$contact-font-color;
             }
         }
         &-submit {
@@ -28,15 +27,16 @@
             margin-bottom: 0px;
             box-sizing: border-box;
             font-size: 16px;
-            color: #dfdfdf;
-            border: none;
+            color: var.$contact-font-color;
+            border: 1px solid #00000050;
             cursor: pointer;
             &:hover {
-                background: linear-gradient(45deg, #ff00ff, #ffd900);
+                background: linear-gradient(45deg, var.$linear-color-1, var.$linear-color-2);
                 background-clip: text;
+                border: none;
                 color: transparent;
-                box-shadow: 5px -5px 25px 0px rgba(#ff8000, 1),
-                            -10px 5px 25px 0px rgba(#900590, 1);
+                box-shadow: 5px -5px 25px 0px rgba(var.$linear-color-2, 1),
+                            -10px 5px 25px 0px rgba(var.$linear-color-1, 1);
             }
         }
 }
