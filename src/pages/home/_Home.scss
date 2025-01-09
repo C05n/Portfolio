@@ -7,7 +7,7 @@
    &-intro {
       @include mixin.blured-background(10px);
       width: 100%;
-      height: 50dvh;
+      height: 80%;
       position: absolute;
       top: 2em;
       color: white;
@@ -25,9 +25,9 @@
    &-competences, .homepage-tools {
       @include mixin.blured-background(10px);
       width: 60%;
-      height: 150px;
+      height: 15%;
       position: absolute;
-      bottom: 2em;
+      bottom: 0;
       color: white;
       text-align: center;
       padding: 10px;
