@@ -4,9 +4,11 @@ function Home() {
   return (
     <div className='homepage'>
       <div className="homepage-intro">
+        <h1>Cedric Erhard</h1>
+        <h2>Développeur Front-End</h2>
       </div>
       <div className="homepage-competences">
-        <h2>Compétences</h2>
+        <h3>Compétences</h3>
         <div className="homepage-competences-content">
           <Comp $compSrc="src\assets\svg\technologies\html5.svg" $compName="HTML" />
           <Comp $compSrc="src\assets\svg\technologies\css.svg" $compName="CSS" />
@@ -18,7 +20,7 @@ function Home() {
         </div>
       </div>
       <div className="homepage-tools">
-        <h2>Outils</h2>
+        <h3>Outils</h3>
         <div className="homepage-tools-content">
           <Comp $compSrc="src\assets\svg\tools\git.svg" $compName="Git" />
           <Comp $compSrc="src\assets\svg\tools\github.svg" $compName="GitHub" />

@@ -33,7 +33,7 @@
       }
       &-title {
          position: absolute;
-         top: 40%;
+         top: 20%;
          left: 50%;
          width: 100%;
          transform: translate(-50%, -50%);
@@ -43,6 +43,19 @@
          font-size: 18px;
          font-weight: 700;
          z-index: 2;
+      }
+      &-stacks {
+         position: absolute;
+         top: 60%; 
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: 2;
+         filter: hue-rotate(90deg);
+         .stack-icon {
+            height: 30px;
+            // filter: hue-rotate(180deg);
+            filter: grayscale(50%);
+         }
       }
       &::before {
          content: "";

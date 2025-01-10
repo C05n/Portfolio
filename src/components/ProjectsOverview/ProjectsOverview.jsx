@@ -8,6 +8,16 @@ function ProjectsOverview({ projects, onProjectClick, activeProject }) {
                >
                <img className="project_card-img" src={`${project.cover}`}></img>
                <p className="project_card-title">{project.title}</p>
+               <div className="project_card-stacks">
+               {project.stacks && project.stacks.map((stack, id) => (
+                     <img 
+                        key={id} 
+                        src={stack} 
+                        alt={`stack-${id}`} 
+                        className="stack-icon"
+                     />
+                  ))}
+               </div>
             </div>
          ))}
       </div>

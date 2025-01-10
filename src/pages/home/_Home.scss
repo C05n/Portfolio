@@ -1,37 +1,39 @@
 @use '../../styles/Mixin' as mixin;
+@use '../../styles/Variables' as var;
 
 .homepage {
    @include mixin.absolute-center;
    height: 100%;
    width: 100%;
    &-intro {
-      @include mixin.blured-background(10px);
-      width: 100%;
-      height: 80%;
+      background: linear-gradient( #ffffff 25%, #ff0000 );
+      background-clip: text;
+      color: transparent;
       position: absolute;
-      top: 2em;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      h2 {
+      top: 50%;
+      left: 0%;
+      font-family: "Gloock";
+      h1 {
+         font-size: 4em;
          font-weight: 500;
-         margin-bottom: 20px;
-         font-size: 1.5em;
+         font-family: "Gloock";
       }
-      p {
+      h2 {
+         font-size: 3em;
          font-weight: 400;
-      } 
+         font-family: "Gloock";  
+      }
    }
    &-competences, .homepage-tools {
       @include mixin.blured-background(10px);
       width: 60%;
-      height: 15%;
+      height: 150px;
       position: absolute;
       bottom: 0;
       color: white;
       text-align: center;
       padding: 10px;
-      h2 {
+      h3 {
          font-weight: 500;
          margin-bottom: 20px;
          font-size: 1.5em;
@@ -50,7 +52,7 @@
                height: 40px;
                margin-bottom: 10px;
             }
-            h3 {
+            h4 {
                color: white;
                font-weight: 400;
             }

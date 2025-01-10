@@ -5,7 +5,8 @@
          "miniature": "src/assets/data/miniatures/Riding_cities_miniature.png",
          "cover": "src/assets/data/cover/Riding_cities_cover.png",
          "description": "Projet fictif pour une association sportive promouvant le Skate en région. Site vitrine en Html / CSS.",
-         "link": "https://github.com/C05n/Riding_Cities"
+         "link": "https://github.com/C05n/Riding_Cities",
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg" ]
       },
       {
          "id": 2,
@@ -13,7 +14,8 @@
          "miniature": "src/assets/data/miniatures/Booki_miniature.png",
          "cover": "src/assets/data/cover/Booki_cover.png",
          "description": "",
-         "link": "https://github.com/C05n/Projet_3-Booki"
+         "link": "https://github.com/C05n/Projet_3-Booki",
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg" ]
       },
       {
          "id": 3,
@@ -21,7 +23,8 @@
          "miniature": "src/assets/data/miniatures/Ohmyfood_miniature.png",
          "cover": "src/assets/data/cover/Ohmyfood_cover.png",
          "description": "",
-         "link": "https://github.com/C05n/Projet_4-Ohmyfood"
+         "link": "https://github.com/C05n/Projet_4-Ohmyfood",
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg" ]
       },
       {
          "id": 4,
@@ -29,7 +32,8 @@
          "miniature": "src/assets/data/miniatures/Print_it_miniature.png",
          "cover": "src/assets/data/cover/Print_it_cover.png",
          "description": "",
-         "link": "https://github.com/C05n/Projet_5-Print_it"
+         "link": "https://github.com/C05n/Projet_5-Print_it",
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg", "src/assets/svg/technologies/JavaScript.svg" ]
       },
       {
          "id": 5,
@@ -37,7 +41,8 @@
          "miniature": "src/assets/data/miniatures/Sophie_bluel_miniature.png",
          "cover": "src/assets/data/cover/Sophie_bluel_cover.png",
          "description": "",
-         "link": "https://github.com/C05n/Projet_6-Sophie_bluel"
+         "link": "https://github.com/C05n/Projet_6-Sophie_bluel",
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg", "src/assets/svg/technologies/JavaScript.svg" ]
       },
       {
          "id": 6,
@@ -45,7 +50,8 @@
          "miniature": "src/assets/data/miniatures/Kasa_miniature.png",
          "cover": "src/assets/data/cover/Kasa_cover.png",
          "description": "",
-         "link": "https://github.com/C05n/Projet_7-Kasa"
+         "link": "https://github.com/C05n/Projet_7-Kasa",
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg", "src/assets/svg/technologies/react.svg" ]
       },
       {
          "id": 7,
