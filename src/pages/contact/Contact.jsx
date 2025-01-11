@@ -1,14 +1,14 @@
 import InputForm from "../../components/InputForm/InputForm";
+import ContactCard from "../../components/contactCard/contactCard"
+import ContactForm from "../../containers/contactForm/contactForm";
 
 function Contact() {
    return (
-    
-      <div className="contact_form">
-        <InputForm $type="text" $placeholder="Votre nom" />
-        <InputForm $type="Email" $placeholder="E-mail" />
-        <textarea placeholder=" Votre Message..." rows={20}></textarea>
-        <InputForm $className="contact_form-submit" $type="submit"/>
-      </div>
+    <section className="contact">
+      <ContactCard $cardlink="src\assets\svg\mail.svg" />
+      <ContactCard $cardlink="src\assets\svg\linkedin.svg" />
+      <ContactForm />
+      </section>
    );
  }
  

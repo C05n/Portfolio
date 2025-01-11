@@ -7,6 +7,9 @@ function Home() {
         <h1>Cedric Erhard</h1>
         <h2>Développeur Front-End</h2>
       </div>
+      <a className="homepage-link" href='https://www.linkedin.com/in/C05n/' target="_blank">
+        <img src="src\assets\svg\linkedin.svg" alt="" />
+      </a>
       <div className="homepage-competences">
         <h3>Compétences</h3>
         <div className="homepage-competences-content">

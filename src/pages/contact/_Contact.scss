@@ -1,45 +1,18 @@
 @use "../../styles/Mixin" as mixin;
 @use "../../styles/Variables" as var;
 
-.contact_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    right: 5%;
-    bottom: 0;
-        textarea {
-            @include mixin.blured-background(10px);
-            width: 500px;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            font-size: 16px;
-            color: var.$contact-font-color;
-            resize: none;
-            border: 1px solid #00000050;
-            &::placeholder {
-                color: var.$contact-font-color;
-            }
-        }
-        &-submit {
-            @include mixin.blured-background(30px);
-            width: 200px;
-            padding: 10px;
-            margin-bottom: 0px;
-            box-sizing: border-box;
-            font-size: 16px;
-            color: var.$contact-font-color;
-            border: 1px solid #00000050;
-            cursor: pointer;
-            &:hover {
-                background: linear-gradient(45deg, var.$linear-color-1, var.$linear-color-2);
-                background-clip: text;
-                border: none;
-                color: transparent;
-                box-shadow: 5px -5px 25px 0px rgba(var.$linear-color-2, 1),
-                            -10px 5px 25px 0px rgba(var.$linear-color-1, 1);
-            }
-        }
-}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .contact_card {
+        position: relative;
+        top: 200px;
+        left: 20%;
+    }
+    .contact_form {
+        position: relative;
+        right: -300px;
+        bottom: 250px;
+    }
+}   

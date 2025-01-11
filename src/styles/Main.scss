@@ -5,10 +5,13 @@
 // 
 @use "../components/navlink/Navlink";
 @use "../components/header/Header";
-@use "../components/ProjectsOverview/ProjectsOverview";
 @use "../components/ProjectsDescription/ProjectsDescription";
 @use "../components/InputForm/InputForm";
+@use "../components/contactCard/contactCard";
 //
+@use "../containers/ProjectsOverview/ProjectsOverview";
+@use "../containers/contactForm/contactForm";
+// 
 @use "../pages/home/Home";
 @use "../pages/projets/Projets";
 @use "../pages/contact/Contact";
