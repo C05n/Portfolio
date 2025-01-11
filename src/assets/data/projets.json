@@ -51,30 +51,15 @@
          "cover": "src/assets/data/cover/Kasa_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_7-Kasa",
-         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/css.svg", "src/assets/svg/technologies/react.svg" ]
+         "stacks": [ "src/assets/svg/technologies/html5.svg", "src/assets/svg/technologies/sass.svg", "src/assets/svg/technologies/react.svg" ]
       },
       {
          "id": 7,
-         "title": "Nina Carducci",
-         "miniature": "src/assets/data/miniatures/Nina_carducci_miniature.png",
-         "cover": "src/assets/data/cover/Nina_carducci_cover.png",
-         "description": "",
-         "link": "https://github.com/C05n/Projet_8-Nina_carducci"
-      },
-      {
-         "id": 8,
-         "title": "724Events",
-         "miniature": "src/assets/data/miniatures/724Events_miniature.png",
-         "cover": "src/assets/data/cover/724Events_cover.png",
-         "description": "",
-         "link": "https://github.com/C05n/Projet_9-724Events"
-      },
-      {
-         "id": 9,
          "title": "ArgentBank",
          "miniature": "src/assets/data/miniatures/ArgentBank_miniature.png",
          "cover": "src/assets/data/cover/Argentbank_cover.png",
          "description": "",
-         "link": "https://github.com/C05n/Projet_10-ArgentBank"
+         "link": "https://github.com/C05n/Projet_10-ArgentBank",
+         "stacks": [ "src/assets/svg/technologies/sass.svg", "src/assets/svg/technologies/react.svg", "src/assets/svg/technologies/react-router.svg", "src/assets/svg/technologies/redux.svg" ]
       }
    ]

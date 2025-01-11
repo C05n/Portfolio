@@ -3,7 +3,7 @@
 .projectsView {
    @include mixin.blured-background(25px);
    grid-column: 1 / span 12;
-   grid-row: span 9;
+   grid-row: span 8;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
@@ -11,7 +11,7 @@
    justify-content: center;
    .project_card {
       width: auto;
-      height: 16dvh;
+      height: 15dvh;
       backdrop-filter: blur(4px);
       border-radius: 5px;
       cursor: pointer;
@@ -21,9 +21,15 @@
       box-shadow:  0px 0px 20px 5px rgba(#000000, 0.5);
       &.active {
          box-shadow: 0px 0px 40px 10px rgba(#ffffff, 1);
-         height: 18dvh;
+         height: 17dvh;
          &::before {
-            opacity: 0;
+            display: none;
+         }
+         p {
+            display: none;
+         }
+         .stack-icon {
+            display: none;
          }
       }
       &-img {
@@ -46,15 +52,15 @@
       }
       &-stacks {
          position: absolute;
+         display: flex;
+         gap: 10px;
          top: 60%; 
          left: 50%;
          transform: translateX(-50%);
          z-index: 2;
-         filter: hue-rotate(90deg);
          .stack-icon {
-            height: 30px;
-            // filter: hue-rotate(180deg);
-            filter: grayscale(50%);
+            height: 35px;
+            filter: brightness(2) sepia(1) saturate(10000%) hue-rotate(300deg);
          }
       }
       &::before {
