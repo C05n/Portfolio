@@ -2,9 +2,9 @@ import { Route, Routes, useLocation  } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useRef } from 'react';
 // 
-import Home from "../pages/home/Home"
-import Projets from "../pages/projets/Projets"
-import Contact from "../pages/contact/Contact"
+import Home from "../pages/home/home"
+import Projets from "../pages/projets/projets"
+import Contact from "../pages/contact/contact"
 
 
 const AppRoutes = () => {

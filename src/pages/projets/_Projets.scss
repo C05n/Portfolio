@@ -1,9 +1,18 @@
-@use '../../styles/Mixin' as mixin;
-
-.projets {
-   @include mixin.absolute-center;
+.projects {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
    grid-template-rows: repeat(12, 1fr);
    gap: 50px;
+   &-overview {
+      grid-column: 1 / span 12;
+      grid-row: span 8;
+   }
+   &-stacks {
+      grid-column: 1 / span 4;
+      grid-row: span 4;
+   }
+   &-description {
+      grid-column: 5 / span 8;
+      grid-row: span 4;
+   }
 }

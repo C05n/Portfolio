@@ -1,4 +1,5 @@
-@use "./Variables" as var;
+@use "./variables" as var;
+@use "./mixin" as mixin;
 
 * {
    margin: 0;
@@ -8,6 +9,11 @@
    font-family: Montserrat;
    // 
    // 
+   section {
+      @include mixin.absolute-center;
+      height: 100%;
+      width: 100%;
+   }
    .App {
       position: absolute;
       top: 0;

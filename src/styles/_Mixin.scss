@@ -1,4 +1,4 @@
-@use "./Variables" as var;
+@use "./variables" as var;
 
 @mixin blured-background($border-radius) {
    background: var.$blured-background;

@@ -1,17 +1,22 @@
-@use "./Mixin" as mixin;
-@use "./Variables";
-@use "./Styles";
-@use "./Animations";
+@use "./mixin";
+@use "./variables";
+@use "./styles";
+@use "./animations";
 // 
-@use "../components/navlink/Navlink";
-@use "../components/header/Header";
-@use "../components/ProjectsDescription/ProjectsDescription";
-@use "../components/InputForm/InputForm";
+@use "../components/navlink/navlink";
+@use "../components/homeLink/homeLink";
+@use "../components/inputForm/inputForm";
 @use "../components/contactCard/contactCard";
 //
-@use "../containers/ProjectsOverview/ProjectsOverview";
+@use "../containers/navbar/navbar";
+@use "../containers/homeIntro/homeIntro";
+@use "../containers/homeComp/homeComp" ;
+@use "../containers/homeTools/homeTools";
+@use "../containers/projectsOverview/projectsOverview";
+@use "../containers/projectsStacks/projectsStacks";
+@use "../containers/projectsDescription/projectsDescription";
 @use "../containers/contactForm/contactForm";
 // 
-@use "../pages/home/Home";
-@use "../pages/projets/Projets";
-@use "../pages/contact/Contact";
+@use "../pages/home/home";
+@use "../pages/projets/projets";
+@use "../pages/contact/contact";

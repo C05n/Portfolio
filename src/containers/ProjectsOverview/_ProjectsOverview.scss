@@ -1,9 +1,7 @@
-@use '../../styles/Mixin' as mixin;
+@use '../../styles/mixin' as mixin;
 
-.projectsView {
+.projects-overview {
    @include mixin.blured-background(25px);
-   grid-column: 1 / span 12;
-   grid-row: span 8;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;

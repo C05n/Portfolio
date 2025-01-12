@@ -2,7 +2,6 @@
       {
          "id": 1,
          "title": "Riding cities",
-         "miniature": "src/assets/data/miniatures/Riding_cities_miniature.png",
          "cover": "src/assets/data/cover/Riding_cities_cover.png",
          "description": "Projet fictif pour une association sportive promouvant le Skate en région. Site vitrine en Html / CSS.",
          "link": "https://github.com/C05n/Riding_Cities",
@@ -11,7 +10,6 @@
       {
          "id": 2,
          "title": "Booki",
-         "miniature": "src/assets/data/miniatures/Booki_miniature.png",
          "cover": "src/assets/data/cover/Booki_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_3-Booki",
@@ -20,7 +18,6 @@
       {
          "id": 3,
          "title": "Ohmyfood",
-         "miniature": "src/assets/data/miniatures/Ohmyfood_miniature.png",
          "cover": "src/assets/data/cover/Ohmyfood_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_4-Ohmyfood",
@@ -29,7 +26,6 @@
       {
          "id": 4,
          "title": "Print it",
-         "miniature": "src/assets/data/miniatures/Print_it_miniature.png",
          "cover": "src/assets/data/cover/Print_it_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_5-Print_it",
@@ -38,7 +34,6 @@
       {
          "id": 5,
          "title": "Sophie Bluel",
-         "miniature": "src/assets/data/miniatures/Sophie_bluel_miniature.png",
          "cover": "src/assets/data/cover/Sophie_bluel_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_6-Sophie_bluel",
@@ -47,7 +42,6 @@
       {
          "id": 6,
          "title": "Kasa",
-         "miniature": "src/assets/data/miniatures/Kasa_miniature.png",
          "cover": "src/assets/data/cover/Kasa_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_7-Kasa",
@@ -56,7 +50,6 @@
       {
          "id": 7,
          "title": "ArgentBank",
-         "miniature": "src/assets/data/miniatures/ArgentBank_miniature.png",
          "cover": "src/assets/data/cover/Argentbank_cover.png",
          "description": "",
          "link": "https://github.com/C05n/Projet_10-ArgentBank",

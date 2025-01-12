@@ -1,6 +1,6 @@
 function ProjectsOverview({ projects, onProjectClick, activeProject }) {
    return (
-      <div className="projectsView">
+      <div className="projects-overview">
          {projects.map((project) => (
             <div  key={project.id}
                   className={`project_card ${activeProject &&activeProject.id === project.id ? 'active' : ''}`} 

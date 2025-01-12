@@ -1,6 +1,6 @@
-@use '../../styles/Mixin' as mixin;
+@use '../../styles/mixin' as mixin;
 
-.contact_card {
+.contact_cards-card {
     @include mixin.blured-background(10px);
     height: 150px;
     width: 250px;
@@ -10,7 +10,4 @@
         height: 50px;
         margin-top: 10px;
     }
-//     a {
-
-//     }
 }

@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles/Main.scss';
+import './styles/main.scss';
 import { BrowserRouter } from 'react-router-dom';
 
-import AppRoutes from './routes/Root'
-import Header from './components/header/Header';
+import AppRoutes from './routes/root'
+import Navbar from './containers/navbar/navbar';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div className='App-content'>
         <BrowserRouter>
-          <Header />
+          <Navbar />
           <AppRoutes />
         </BrowserRouter>
       </div>
