@@ -9,8 +9,8 @@
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(12, 1fr);
       &-icon {
-         max-height: 90px;
-         max-width: 90px;
+         max-height: 80px;
+         max-width: 80px;
          grid-column: span 4;
       }
    }

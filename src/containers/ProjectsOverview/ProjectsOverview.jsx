@@ -1,24 +1,15 @@
+import ProjectsCard from "../../components/projectsCard/projectsCard"
+
 function ProjectsOverview({ projects, onProjectClick, activeProject }) {
    return (
       <div className="projects-overview">
          {projects.map((project) => (
-            <div  key={project.id}
-                  className={`project_card ${activeProject &&activeProject.id === project.id ? 'active' : ''}`} 
-                  onClick={() => onProjectClick(project)}
-               >
-               <img className="project_card-img" src={`${project.cover}`}></img>
-               <p className="project_card-title">{project.title}</p>
-               <div className="project_card-stacks">
-                  { project.stacks.map((stack, id) => (
-                     <img 
-                        key={`${project.id}-stack-${id}`}
-                        src={stack} 
-                        alt={`stack-${id}`} 
-                        className="stack-icon"
-                     />
-                  ))}
-               </div>
-            </div>
+            <ProjectsCard 
+               key={project.id}
+               project={project}
+               activeProject={activeProject}
+               onProjectClick={onProjectClick}
+            />
          ))}
       </div>
    )
