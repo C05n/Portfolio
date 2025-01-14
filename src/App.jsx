@@ -9,10 +9,8 @@ function App() {
   return (
     <div className="App">
       <div className='App-content'>
-        <Router>
           <Navbar />
           <AppRoutes />
-        </Router>
       </div>
     </div>
   )
