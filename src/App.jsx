@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/main.scss';
-import { BrowserRouter } from 'react-router-dom';
 import { HashRouter as Router } from 'react-router-dom';
-import AppRoutes from './routes/oot'
+import AppRoutes from './routes/Root'
 import Navbar from './containers/navbar/navbar';
 
 
