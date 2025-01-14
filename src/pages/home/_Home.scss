@@ -1,89 +1,112 @@
 .homepage {
    display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(12, 1fr);
+   grid-template-columns: repeat(12, auto);
+   grid-template-rows: repeat(12, auto);
    &-intro {
-      grid-row: 6 / span 2;
-      grid-column: span 7;
+      grid-row: 6;
+      grid-column: 1;
    }
    &-link {
-      grid-row: 10;
+      grid-row: 11;
       grid-column: 12;
    }
    &-competences {
-      grid-row: 11 / span 2;
+      grid-row: 12;
       grid-column: span 7;
    }
    &-tools {
-      grid-row: 11 / span 2;
+      grid-row: 12;
       grid-column: 9 / span 4;
    }
    @media (max-width: 1060px) {
       &-intro {
-         grid-row: 2 / span 3;
+         grid-row: 3;
          grid-column: span 12;
       }
       &-link {
-         grid-row: 7;
+         grid-row: 11;
          grid-column: 12;
       }
       &-competences {
-         grid-row: 9 / span 4;
+         grid-row: 12;
          grid-column: span 7;
+         margin-right: 10px;
+         max-height: none;
+         &-content {
+            gap: 60px;
+         }
       }
       &-tools {
-         grid-row: 10 / span 3;
+         grid-row: 12;
          grid-column: 9 / span 4;
+         max-height: none;
+         &-content {
+            gap: 60px;
+         }
+         border-left: 1px solid #ffffff10;
       }
    }
    @media (max-width:768px) {
       &-intro {
-         grid-row: 2 / span 4;
+         grid-row: 1;
          grid-column: span 12;
       }
       &-link {
-         grid-row: 7;
+         grid-row: 2;
          grid-column: 12;
       }
       &-competences {
-         grid-row: 6 / span 7;
-         grid-column: span 7;
+         grid-row: 11;
+         grid-column: span 12;
+         border-bottom-left-radius: 0 ;
+         border-bottom-right-radius: 0 ;
+         margin-right: 0;
+         &-content {
+            gap: 20px 90px;
+         }
       }
       &-tools {
-         grid-row: 8 / span 5;
-         grid-column: 9 / span 4;
+         grid-row: 12;
+         grid-column: span 12;
+         border-top-left-radius: 0 ;
+         border-top-right-radius: 0 ;
       }
    }
    @media (max-width:576px) {
       &-intro {
-         grid-row: span 2;
+         grid-row: 1;
          grid-column: span 11;
          h1 {
-            font-size: 2em;
+            font-size: 3em;
          }
          h2 {
-            font-size: 1.5em;
+            font-size: 2em;
          }
       }
       &-link {
-         grid-row: 1;
+         grid-row: 2;
          grid-column: 12;
+         display: none;
       }
       &-competences {
-         grid-row: 3 / span 7;
+         grid-row: 11;
          grid-column: span 12;
-         border-bottom-left-radius: 0 ;
-         border-bottom-right-radius: 0 ;
          &-content {
-            padding: 0 30px;
-            gap: 20px;
+            gap: 0px 50px;
+            article {
+               width: 2em;
+            }
          }
       }
       &-tools {
-         grid-row: 10 / span 3;
+         grid-row: 12;
          grid-column: span 12;
-         border-top-left-radius: 0 ;
-         border-top-right-radius: 0 ;
+         &-content {
+            gap: 0px 10px;
+            article {
+               width: 2em;
+            }
+         }
       }
    }
 }

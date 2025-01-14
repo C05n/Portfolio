@@ -2,17 +2,21 @@
 
 .projects-stacks {
    @include mixin.blured-background(25px);
-   padding: 20px;
+   padding: 60px 30px;
    // 
    &-active {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
       justify-items: center;
+      gap: 20px;
       &-icon {
          max-height: 80px;
          max-width: 80px;
          grid-column: span 1;
       }
+   }
+   @media (max-width: 1060px) {
+      padding: 30px;
    }
 }
