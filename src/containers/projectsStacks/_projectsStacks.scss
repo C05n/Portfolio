@@ -6,12 +6,13 @@
    // 
    &-active {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
       &-icon {
          max-height: 80px;
          max-width: 80px;
-         grid-column: span 4;
+         grid-column: span 1;
       }
    }
 }

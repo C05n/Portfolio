@@ -1,6 +1,9 @@
-function InputForm ({$placeholder, $type, $className}) {
+function InputForm ({$placeholder, $type, $className, $label}) {
     return (
-        <input type={$type} placeholder={$placeholder} className={$className} />
+        <div className="inputForm">
+            <label htmlFor={$label}></label>
+            <input type={$type} id={$label} placeholder={$placeholder} className={$className} autoComplete="off" />
+        </div>
     );
 }
 

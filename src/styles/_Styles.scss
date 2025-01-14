@@ -10,7 +10,6 @@
    // 
    // 
    section {
-      @include mixin.absolute-center;
       height: 100%;
       width: 100%;
    }
@@ -36,6 +35,9 @@
          bottom: 0;
          height: calc(100vh - 40px);
          width: calc(100vw - 40px);
+         @media (max-width: 768px) {
+            display: none;
+         }
       }
       &::after {
          content: "";
@@ -60,7 +62,10 @@
          height: calc(100vh - 40px);
          width: calc(100vw - 40px);
          border-radius: 5px;
-
+         @media (max-width: 768px) {
+            border: none;
+            padding: 0;
+         }
          .section_div {
             position: relative;
             top: 50px;

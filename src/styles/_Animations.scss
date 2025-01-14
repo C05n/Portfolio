@@ -1,21 +1,26 @@
 @use './variables' as var;
+@use './mixin' as mixin;
 
 .fade-enter {
    z-index: -1;
    transform: translate(-200%);
+   @include mixin.absolute-center;
 
    &-active {
       transform: translate(0);
       transition: transform 600ms;
+      @include mixin.absolute-center;
    }
 }
 
 .fade-exit {
    z-index: -1;
    transform: translate(0);
+   @include mixin.absolute-center;
    &-active {
       transform: translate(200%);
       transition: transform 900ms;
+      @include mixin.absolute-center;
    }
 }
 
