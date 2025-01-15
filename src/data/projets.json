@@ -1,0 +1,66 @@
+[
+      {
+         "id": 1,
+         "title": "Riding cities",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Riding_cities_cover.png",
+         "description": "Site vitrine pour une association sportive promouvant le Skate en région.",
+         "link": "https://github.com/C05n/Riding_Cities",
+         "stacks": [ "Html", "CSS" ]
+      },
+      {
+         "id": 2,
+         "title": "Booki",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Booki_cover.png",
+         "description": "Projet fictif",
+         "link": "https://github.com/C05n/Projet_3-Booki",
+         "stacks": [ "Html", "CSS" ]
+      },
+      {
+         "id": 3,
+         "title": "Ohmyfood",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Ohmyfood_cover.png",
+         "description": "Projet fictif",
+         "link": "https://github.com/C05n/Projet_4-Ohmyfood",
+         "stacks": [ "Html", "CSS" ]
+      }
+      ,
+      {
+         "id": 4,
+         "title": "Print it",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Print_it_cover.png",
+         "description": "Projet fictif",
+         "link": "https://github.com/C05n/Projet_5-Print_it",
+         "stacks": [ "Html", "CSS", "JavaScript" ]
+      },
+      {
+         "id": 5,
+         "title": "Sophie Bluel",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Sophie_bluel_cover.png",
+         "description": "Projet fictif",
+         "link": "https://github.com/C05n/Projet_6-Sophie_bluel",
+         "stacks": [ "Html", "CSS", "JavaScript" ]
+      },
+      {
+         "id": 6,
+         "title": "Kasa",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Kasa_cover.png",
+         "description": "Projet fictif",
+         "link": "https://github.com/C05n/Projet_7-Kasa",
+         "stacks": [ "Html", "Scss", "React" ]
+      },
+      {
+         "id": 7,
+         "title": "ArgentBank",
+         "subtitle" : "Projet fictif",
+         "cover": "src/data/cover/Argentbank_cover.png",
+         "description": "Projet fictif",
+         "link": "https://github.com/C05n/Projet_10-ArgentBank",
+         "stacks": [ "React", "React-router", "Redux", "Scss" ]
+      }
+   ]

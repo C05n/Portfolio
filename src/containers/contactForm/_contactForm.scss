@@ -4,14 +4,15 @@
 .contact_form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     width: fit-content;
     height: 90%;
     textarea {
         @include mixin.blured-background(10px);
         width: 500px;
         max-height: 500px;
+        height: 100%;
         padding: 10px;
         margin-bottom: 20px;
         box-sizing: border-box;

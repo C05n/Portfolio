@@ -49,10 +49,25 @@
       &-intro {
          grid-row: 1;
          grid-column: span 12;
+         h1 {
+            font-size: 3em;
+         }
+         h2 {
+            font-size: 2em;
+         }
       }
       &-link {
          grid-row: 2;
          grid-column: 12;
+         &:hover {
+            img {
+               height: 35px;
+            }
+            &::before {
+               top: 20px;
+               right: 55px ;
+            }
+         } 
       }
       &-competences {
          grid-row: 11;
@@ -76,34 +91,49 @@
          grid-row: 1;
          grid-column: span 11;
          h1 {
-            font-size: 3em;
+            font-size: 2.5em;
          }
          h2 {
-            font-size: 2em;
+            font-size: 1.5em;
          }
       }
       &-link {
-         grid-row: 2;
+         grid-row: 10;
          grid-column: 12;
-         display: none;
       }
       &-competences {
+         padding: 5px 20px;
+         h3 {
+            font-size: 1em ;
+         }
          grid-row: 11;
          grid-column: span 12;
          &-content {
-            gap: 0px 50px;
+            gap: 20px 60px;
             article {
-               width: 2em;
+               width: 1.5em;
+               h4 {
+                  font-size: 0.8em;
+               }
             }
          }
       }
       &-tools {
+         padding: 0 0 10px 5px;
+         max-height: 130px;
+         min-height: 120px;
+         h3 {
+            font-size: 1em ;
+         }
          grid-row: 12;
          grid-column: span 12;
          &-content {
             gap: 0px 10px;
             article {
-               width: 2em;
+               width: 1.5em;
+               h4 {
+                  font-size: 0.8em;
+               }
             }
          }
       }

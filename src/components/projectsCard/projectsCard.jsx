@@ -5,15 +5,13 @@ function ProjectsCard({ project, activeProject, onProjectClick }) {
           onClick={() => onProjectClick(project)}
        >
           <img className="project_card-img" src={project.cover} alt={project.title} />
-          <p className="project_card-title">{project.title}</p>
+          <h2 className="project_card-title">{project.title}</h2>
+          <p className="project_card-subtitle">{project.subtitle}</p>
+          <p className="project_card-desc">{project.description}</p>
+          <a className="project_card-link" href="">En savoir plus...</a>
           <div className="project_card-stacks">
-             {project.stacks.map((stack, id) => (
-                <img 
-                   key={`${project.id}-stack-${id}`} 
-                   src={stack} 
-                   alt={`stack-${id}`} 
-                   className="stack-icon" 
-                />
+             {project.stacks.map((stack) => (
+               <p className="stack-icon">{stack}</p>
              ))}
           </div>
        </div>

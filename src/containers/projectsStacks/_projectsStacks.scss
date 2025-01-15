@@ -12,10 +12,18 @@
       &-icon {
          max-height: 80px;
          max-width: 80px;
+         height: 50%;
          grid-column: span 1;
       }
    }
    @media (max-width: 1060px) {
-      padding: 15px 30px;
+      padding: 5%;
+   }
+   @media (max-width: 768px) {
+      &-active {
+         &-icon {
+            height: 2.5em;
+         }
+      }
    }
 }

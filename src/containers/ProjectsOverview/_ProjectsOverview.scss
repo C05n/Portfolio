@@ -1,12 +1,11 @@
 @use '../../styles/mixin' as mixin;
 
 .projects-overview {
-   @include mixin.blured-background(25px);
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   align-content: center;
-   justify-content: center;
-   padding: 20px;
-   overflow: hidden;
+   // @include mixin.blured-background(25px);
+   // display: flex;
+   // flex-direction: row;
+   // align-content: center;
+   // justify-content: center;
+   // padding: 20px;
+   // overflow: hidden;
 }

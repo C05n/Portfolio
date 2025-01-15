@@ -38,6 +38,7 @@
             justify-content: center;
             &-card {
                 width: 40%;
+                margin-top: 10px;
             }
         }
         &_form {
@@ -59,5 +60,8 @@
                 max-width: 420px;
             }
         }
+    }
+    @media (max-width:576px) {
+        padding: 0;
     }
 }   

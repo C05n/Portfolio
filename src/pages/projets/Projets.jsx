@@ -1,21 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import projectsData from '../../assets/data/projets.json';
-import ProjectsOverview from '../../containers/projectsOverview/projectsOverview';
-import ProjectsDescription from '../../containers/projectsDescription/projectsDescription';
-import ProjectsStacks from '../../containers/projectsStacks/projectsStacks';
+import React, { useState } from 'react';
+import projectsData from '../../data/projets.json';
+import ProjectsCard from "../../components/projectsCard/projectsCard"
 
 function Projets() {
-   const [activeProject, setActiveProject] = useState(projectsData[6]);
+   const [activeIndex, setActiveIndex] = useState(0);
    const [projects] = useState(projectsData);
 
-   const handleProjectClick = (project) => {
-      setActiveProject(project);
-    };
+   const handlePrev = () => {
+      setActiveIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+   };
+   const handleNext = () => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length);
+   };
+
    return (
       <section className="projects">
-         <ProjectsOverview projects={projects} onProjectClick={handleProjectClick} activeProject={activeProject} />
-         <ProjectsStacks projects={projects} activeProject={activeProject} />
-         <ProjectsDescription projects={projects} activeProject={activeProject} />
+         <div className='projects_carousel'>
+            <button className='projects_carousel-prev' onClick={handlePrev}><img src="assets/svg/arrowLeft.svg" alt="" /></button>
+            {projects.slice(activeIndex, activeIndex +1).map((project) => (
+               <ProjectsCard project={project}/>
+            ))}
+            <button className='projects_carousel-next' onClick={handleNext}><img src="assets/svg/arrowRight.svg" alt="" /></button>
+         </div>
       </section >
    )
 }
