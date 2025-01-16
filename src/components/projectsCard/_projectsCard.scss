@@ -1,61 +1,113 @@
 @use "../../styles/Mixin" as mixin;
-.project_card {
+@use "../../styles/variables" as var;
+
+.projects_card {
    display: flex;
    flex-direction: column;
    @include mixin.blured-background(10px);
    padding: 15px;
-   overflow: hidden;
    text-align: center;
-   position: relative;
    max-height: 100%;
-   max-width: 40em;
-   margin: 10% auto;
+   max-width: 45%;
+   margin: 0 auto;
+   z-index: 2;
+   color: var.$projects_card-font-color;
+   overflow: hidden;
    &-img {
       max-height: 35%;
       width: 100%;
       border-radius: 10px;
    }
    &-title {
-      text-align: center;
-      color: #ffffff;
-      text-shadow: 0px 0px 10px rgba(#000000, 1);
       font-size: 1.3em;
-      font-weight: 700;
-      z-index: 2;
       margin-top: 10px;
    }
    &-subtitle {
-      color: #ffffff;
-      font-size: 0.9em;
+      font-size: 0.85em;
    }
    &-desc {
-      color: #ffffff;
       margin-top: 20px;
-      text-align: center;
       font-size: 1em;
       height: 200px;
    }
    &-link {
       position: relative;
-      left: 40%;
+      left: 38%;
+      font-size: 1em;
    }
    &-stacks {
       display: flex;
       justify-content: center;
-      position: relative;
-      top: 1%;
+      flex-wrap: wrap;
       gap: 10px;
-      z-index: 2;
-      .stack-icon {
-         padding: 5px;
+      font-size: 0.9em;
+      &-item {
+         padding: 4px 8px;
          background-color: #ffffff10;
-         color: #ffffff;
-         border-radius: 10px;
+         border-radius: 15px;
       }
    }
-   @media screen and (max-width: 1060px) {
-      .project_card {
-         height: 16dvh;
+   &-prev, &-next {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      min-width: 253px;
+      backdrop-filter: blur(1px);
+      opacity: 0.75;
+      cursor: pointer;
+      a {
+         display: none;
+      }
+   }
+   @media (max-width: 1060px) {
+      &-title {
+         font-size: 1.1em;
+      }
+      &-subtitle {
+         font-size: 0.75em
+      }
+      &-desc {
+         height: 150px;
+      }
+      &-link {
+         font-size: 0.8em;
+         width: fit-content;
+         left: 65%;
+      }
+      &-stacks {
+         font-size: 0.8em;
+      }
+      &-prev, &-next {
+         min-width: 200px;
+         max-height: 400px;
+      }
+   }
+   @media (max-width: 768px) {
+      height: 100%;
+      padding: 5px;
+      max-width: none;
+      &-link {
+         font-size: 0.8em;
+         width: fit-content;
+         left: 50%;
+      }
+      &-current {
+         margin: 0 -50px;
+      }
+      &-img {
+         max-height: none;
+      }
+      &-prev, &-next {
+         min-width: 150px  ;
+         max-height: 300px;
+      }
+   }
+   @media (max-width: 576px) {
+      &-current {
+         margin: 0 -30px;
+      }
+      &-prev, &-next {
+         min-width: 100px;
       }
    }
 }

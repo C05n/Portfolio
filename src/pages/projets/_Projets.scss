@@ -1,22 +1,46 @@
 .projects {
-
-   &_carousel {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      &-prev, &-next {
-         height: fit-content;
-         width: fit-content;
-         cursor: pointer;
-         border-radius: 50%;
-         padding: 5px;
-         border: none;
-         background-color: #ffffff20;
-         img {
-            width: 30px;
-            height: 30px;
+   display: flex;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   position: relative;
+   z-index: 0;
+   &_btn {
+      background-color: transparent;
+      border-radius: 10px;
+      border: none;
+      z-index: -1;
+      width: min-content;
+      max-width: 253px;
+      position: relative;
+      &-prev {
+         right: -15%;
+      }
+      &-next {
+         left: -15%;
+      }
+   }
+   @media (max-width: 1060px) {
+      &_btn {
+         &-prev {
+            right: -10%;
+         }
+         &-next {
+            left: -10%;
          }
       }
+   }
+   @media (max-width: 768px) {
+      &_btn {
+         &-prev {
+            right: 0%;
+         }
+         &-next {
+            left: 0%;
+         }
+      }
+   }
+   @media (max-width: 576px) {
+      
    }
 }
