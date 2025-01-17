@@ -8,6 +8,10 @@
     justify-content: center;
     width: fit-content;
     height: 90%;
+    .error {
+        color: red;
+        font-size: 1.1em;
+    }
     textarea {
         @include mixin.blured-background(10px);
         width: 500px;
@@ -23,6 +27,10 @@
         &::placeholder {
             color: var.$contact-font-color;
         }
+    }
+    label {
+        visibility: hidden;
+        position: absolute
     }
     &-submit {
         @include mixin.blured-background(30px);
@@ -41,6 +49,19 @@
             color: transparent;
             box-shadow: 5px -5px 25px 0px rgba(var.$linear-color-2, 1),
                         -10px 5px 25px 0px rgba(var.$linear-color-1, 1);
+        }
+    }
+    input {
+        @include mixin.blured-background(10px);
+        width: 500px;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: var.$contact-font-color;
+        border: none;
+        &::placeholder {
+            color: var.$contact-font-color;
         }
     }
 }
