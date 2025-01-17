@@ -21,4 +21,13 @@
             color: white;
         }
     }
+    @media (max-width: 768px) {
+        margin-bottom: 2% ;
+        img {
+            margin-top: 10px;
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
 }

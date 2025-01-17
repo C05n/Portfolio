@@ -7,11 +7,13 @@
    box-sizing: border-box;
    list-style: none;
    font-family: Montserrat;
+   
    // 
    // 
    section {
       height: calc(100% - 70px);
       width: 100%;
+      min-height: 600px;
       margin: 0 auto 80px;
       max-width: 1440px;
       @media (max-width: 768px) {
@@ -28,6 +30,8 @@
       background-size: cover;
       background-position: center;
       overflow: hidden;
+      overflow-y: auto;
+      scrollbar-width: thin;
       z-index: -2;
       &::after {
          content: "";

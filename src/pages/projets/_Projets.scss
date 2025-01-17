@@ -41,6 +41,20 @@
          background-color: #ffffff;
       }
    }
+   @media (min-height: 1200px) {
+      &-dots {
+         bottom: 80px;
+      }
+      &_btn {
+         &-prev {
+            bottom: 0;
+         }
+         &-next {
+            bottom: 0;
+         }
+      }
+      
+   }
    @media (max-width: 1060px) {
       &_btn {
          &-prev {
@@ -59,9 +73,6 @@
          &-next {
             left: 0%;
          }
-      }
-      &-dots {
-         bottom: -20px;
       }
    }
    @media (max-width: 576px) {

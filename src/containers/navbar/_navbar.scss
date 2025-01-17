@@ -14,4 +14,7 @@ header {
       flex-direction: row;
       justify-content: space-around;
    }
+   @media (min-height: 1200px) {
+      bottom: 40px;
+   }
 }

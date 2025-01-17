@@ -30,6 +30,8 @@
       margin-top: 20px;
       font-size: 1em;
       height: 200px;
+      overflow: auto;
+      scrollbar-width: thin;
    }
    &-link {
       display: flex;
@@ -64,6 +66,29 @@
          display: none;
       }
    }
+   @media (min-height: 1200px) {
+      &-current {
+         height: 70%;
+         .projects_card-desc {
+            height: 100%;
+            font-size: 1.3em;
+            padding: 20px;
+            line-height: 30px;
+         }
+      }
+      &-img {
+         max-height: 50%;
+      }
+      &-link {
+         margin-bottom: 20px;
+      }
+      &-prev, &-next {
+         height: 650px;
+         .projects_card-desc {
+            height: 100%;
+         }
+      }
+   }
    @media (max-width: 1060px) {
       &-title {
          font-size: 1.1em;
@@ -73,8 +98,6 @@
       }
       &-desc {
          height: 100%;
-         overflow: auto;
-         scrollbar-width: thin;
       }
       &-link {
          font-size: 0.8em;
@@ -95,8 +118,13 @@
       padding: 5px;
       max-width: none;
       background: #00000060;
+      &-subtitle {
+         display: none;
+      }
       &-desc {
          height: 80%;
+         min-height: 200px;
+         margin-top: 5px;
       }
       &-current {
          max-height: 93%;
