@@ -8,10 +8,8 @@ import Navbar from './containers/navbar/navbar';
 function App() {
   return (
     <div className="App">
-      <div className='App-content'>
           <Navbar />
           <AppRoutes />
-      </div>
     </div>
   )
 }

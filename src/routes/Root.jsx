@@ -10,7 +10,7 @@ const AppRoutes = () => {
    const location = useLocation();
 
    return (
-      <TransitionGroup className={"section_div"}>
+      <TransitionGroup className="transition_group">
          <CSSTransition key={location.key} classNames="fade" timeout={600}>
             <Routes location={location}>
                <Route path="/" element={<Home />} />

@@ -6,7 +6,7 @@ function Contact() {
     <section className="contact">
       <ContactCards />
       <ContactForm />
-      </section>
+    </section>
    );
  }
  
