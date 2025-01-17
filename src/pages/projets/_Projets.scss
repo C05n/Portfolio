@@ -20,6 +20,25 @@
          left: -15%;
       }
    }
+   &-dots {
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      .dot {
+         margin-inline: 5px;
+	      width: 15px;
+	      height: 15px;
+	      border: 2px solid #ffffff;
+	      border-radius: 100%;
+	      cursor: pointer;
+      }
+      .active {
+         background-color: #ffffff;
+      }
+   }
    @media (max-width: 1060px) {
       &_btn {
          &-prev {
@@ -38,6 +57,9 @@
          &-next {
             left: 0%;
          }
+      }
+      &-dots {
+         bottom: -20px;
       }
    }
    @media (max-width: 576px) {

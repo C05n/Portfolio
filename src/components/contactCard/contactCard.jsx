@@ -1,8 +1,12 @@
-function ContactCard ({$cardlink, $cardtext}) {
+import { NavLink } from "react-router-dom";
+
+function ContactCard ({$cardlink, $cardtext, $cardImg}) {
     return (
         <div className="contact_cards-card">
-            <img src={$cardlink} alt="" />
-            <p>{$cardtext}</p>
+            <NavLink to={$cardlink} href="_blank" className="contact_cards-card-link">
+                <img src={$cardImg} alt="" />
+                <p>{$cardtext}</p>
+            </NavLink>
         </div>
     )
 }

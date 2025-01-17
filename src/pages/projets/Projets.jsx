@@ -3,8 +3,29 @@ import projectsData from '../../data/projets.json';
 import ProjectsCard from "../../components/projectsCard/projectsCard"
 
 function Projets() {
-   const [activeIndex, setActiveIndex] = useState(0);
    const [projects] = useState(projectsData);
+   const randomIndex = Math.floor(Math.random() * projects.length);
+   const [activeIndex, setActiveIndex] = useState(randomIndex);
+
+   let touchStartX = 0;
+   let touchEndX = 0;
+
+   const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+   };
+   const handleTouchEnd = (e) => {
+      touchEndX = e.changedTouches[0].clientX;
+      handleSwipe();
+   };
+   const handleSwipe = () => {
+      const swipeDistance = touchStartX - touchEndX;
+      if (swipeDistance > 50) {
+         handleNext();
+      } else if (swipeDistance < -50) {
+         handlePrev();
+      }
+   };
+
 
    const handlePrev = () => {
       setActiveIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
@@ -16,7 +37,7 @@ function Projets() {
    };
 
    return (
-      <section className="projects">
+      <section className="projects" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             {projects.length > 0 && (
                <button
                   className="projects_btn projects_btn-prev" 
@@ -50,6 +71,16 @@ function Projets() {
                   />
                </button>
             )}
+
+         <div className="projects-dots">
+            {projects.map((_, index) => (
+               <span
+                  key={index}
+                  className={`dot ${index === activeIndex ? 'active' : ''}`}
+                  onClick={() => setActiveIndex(index)}
+               ></span>
+            ))}
+         </div>
       </section >
    )
 }

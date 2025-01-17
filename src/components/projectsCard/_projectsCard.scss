@@ -36,6 +36,7 @@
       padding: 0;
       margin: 0;
       font-size: 1em;
+      color: var.$projects_card-font-color;
    }
    &-stacks {
       display: flex;
@@ -70,7 +71,8 @@
       }
       &-desc {
          height: 100%;
-         text-overflow: clip;
+         overflow: auto;
+         scrollbar-width: thin;
       }
       &-link {
          font-size: 0.8em;
@@ -82,14 +84,22 @@
       &-prev, &-next {
          min-width: 200px;
          max-height: 400px;
+         .projects_card-desc {
+            display: none;
+         }
       }
    }
    @media (max-width: 768px) {
-      height: 100%;
       padding: 5px;
       max-width: none;
+      background: #00000060;
+      &-desc {
+         height: 80%;
+      }
       &-current {
-         margin: 0 -50px;
+         max-height: 93%;
+         margin: 0 -30px;
+         margin-bottom: 6%;
       }
       &-img {
          max-height: none;
@@ -98,13 +108,11 @@
          min-width: 150px  ;
          max-height: 300px;
       }
-      &-desc {
-         text-overflow: clip;
-      }
    }
    @media (max-width: 576px) {
       &-current {
-         margin: 0 -30px;
+         margin: 0 -50px;
+         margin-bottom: 6%;
       }
       &-prev, &-next {
          min-width: 100px;

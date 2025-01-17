@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function HeaderLink({NavPath, NavName}) {
    return (
-      <NavLink to={`${NavPath}`}>{NavName}</NavLink>
+      <NavLink className="navbar-link" to={`${NavPath}`}>{NavName}</NavLink>
    )
 }
 
