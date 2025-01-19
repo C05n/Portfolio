@@ -53,19 +53,8 @@
             bottom: 0;
          }
       }
-      
    }
-   @media (max-width: 1060px) {
-      &_btn {
-         &-prev {
-            right: -10%;
-         }
-         &-next {
-            left: -10%;
-         }
-      }
-   }
-   @media (max-width: 768px) {
+   @media (max-width: 991px) {
       &_btn {
          &-prev {
             right: 0%;
@@ -74,8 +63,5 @@
             left: 0%;
          }
       }
-   }
-   @media (max-width: 576px) {
-      
    }
 }

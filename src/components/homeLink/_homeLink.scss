@@ -1,28 +1,37 @@
-.homepage {
-   &-link {
-      margin: 0;
-      padding: 0;
-      &::before {
-         content: " ";
-         position: relative;
-         right: 55px;
-         top: 20px;
-         display: block;
-         width: 40px;
-         height: 1px;
-         background-color: #ffffff;
-      }
+.homepage-link {
+   height: fit-content;
+   width: fit-content;
+   &::before {
+      content: " ";
+      position: relative;
+      right: 55px;
+      top: 20px;
+      display: block;
+      width: 40px;
+      height: 1px;
+      background-color: #ffffff;
+   }
+   img {
+      height: 35px;
+   }
+   &:hover {
       img {
-         height: 35px;
+         height: 60px;
       }
+      &::before {
+         top: 20px;
+         right: 42px ;
+      }
+   }
+   @media (max-width: 991px) {
       &:hover {
          img {
-            height: 60px;
+            height: 35px;
          }
          &::before {
             top: 20px;
-            right: 43px ;
+            right: 55px ;
          }
-      }
+      } 
    }
 }

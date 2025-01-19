@@ -42,7 +42,7 @@
          "subtitle" : "Projet fictif",
          "cover": "assets/cover/Sophie_bluel_cover.png",
          "description": "Création d'une page de connexion pour l'administrateur du site, implémentation de modales pour gérer les projets stockés dans le back-end et ajout d'un système de filtres pour les différents projets.",
-         "link": "https://c05n.github.io/P5_Sophie_bluel/",
+         "link": "https://github.com/C05n/P5_Sophie_bluel",
          "stacks": [ "Html", "CSS", "JavaScript" ]
       },
       {
@@ -55,30 +55,12 @@
          "stacks": [ "React", "React-router", "Scss" ]
       },
       {
-         "id": 7,
-         "title": "724Events",
-         "subtitle" : "Projet fictif",
-         "cover": "assets/cover/724Events_cover.png",
-         "description": "",
-         "link": "https://c05n.github.io/P7_724events/",
-         "stacks": [ "" ]
-      },
-      {
-         "id": 8,
-         "title": "Nina Carducci",
-         "subtitle" : "Projet fictif",
-         "cover": "assets/cover/Nina_carducci_cover.png",
-         "description": "",
-         "link": "https://c05n.github.io/P8_Nina_carducci/",
-         "stacks": [ "SEO" ]
-      },
-      {
          "id": 9,
          "title": "ArgentBank",
          "subtitle" : "Projet fictif",
          "cover": "assets/cover/Argentbank_cover.png",
          "description": "Implémentation du front-end pour une application bancaire avec React avec système d'authentification, intégrations des données à l'aide d'appels à une API REST, utilisation de React-router pour la gestion des routes et de Redux pour la gestion des états.",
-         "link": "https://github.com/C05n/P9_Argentbank",
+         "link": "https://github.com/C05n/Projet_10-ArgentBank",
          "stacks": [ "React", "React-router", "Redux", "Scss" ]
       }
    ]
