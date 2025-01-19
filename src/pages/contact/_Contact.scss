@@ -2,30 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    // @media (max-width: 1060px) {
-    //     padding: 20px;
-    //     &_cards {
-    //         &-card {
-    //             width: 90%;
-    //         }
-    //     }
-    //     &_form {
-    //         width: 100%;
-    //         .inputForm {
-    //             text-align: center;
-    //             width: 80%;
-    //             input {
-    //                 width: 100%;
-    //             }
-    //             .contact_form-submit {
-    //                 width: 50%;
-    //             }
-    //         }
-    //         textarea {
-    //             width: 80%;
-    //         }
-    //     }
-    // }
     @media (max-width: 991px) {
         flex-direction: column;
         padding: 0;
@@ -45,7 +21,6 @@
             max-width: 420px;
             input {
                 width: 100%;
-                
             }
             .contact_form-submit {
                 width: 50%;
