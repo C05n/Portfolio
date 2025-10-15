@@ -25,6 +25,7 @@ body {
   background-color: var(--background);
   width: 100dvw;
   height: 100dvh;
+  min-height: 700px ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,4 +70,5 @@ main {
   }
 
 }
+
 
