@@ -25,10 +25,7 @@ body {
   background-color: var(--background);
   width: 100dvw;
   height: 100dvh;
-  min-height: 900px ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px;
   color: var(--font);
   overflow: hidden;
   position: absolute;
@@ -38,6 +35,9 @@ body {
 body::after {
   content: "";
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 600px;
   height: 600px;
   border-radius: 50%;
@@ -73,6 +73,7 @@ main {
   }
 
 }
+
 
 
 
