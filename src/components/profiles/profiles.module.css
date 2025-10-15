@@ -1,0 +1,26 @@
+.profiles_container {
+   position: absolute;
+   bottom: 30px;
+   right: 30px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   .profiles_container_icon {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+   }
+   .profiles_container_icon:hover {
+      transform: scale(120%);
+   }
+}
+@media ( max-width: 991px) {
+   .profiles_container {
+      bottom: inherit;
+      top: 30px;
+      .profiles_container_icon {
+         height: 30px;
+         width: 30px;
+      }
+   }
+}

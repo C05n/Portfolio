@@ -1,0 +1,29 @@
+.info_container {
+   position: absolute;
+   bottom: 30px;
+   background: linear-gradient(10deg, var(--font) 5%, var(--primary));
+   background-clip: text;
+   color: transparent;
+   text-align: center;
+   font-family: bodoni Moda;
+   .info_container_title {
+      font-size: 60px;
+      font-weight: 400;
+   }
+   .info_container_subtitle {
+      font-size: 30px;
+      font-weight: 300;
+   }
+}
+@media ( max-width: 991px) {
+   .info_container {
+      bottom: inherit;
+      top: 30px;
+      .info_container_title {
+         font-size: 30px
+      }
+      .info_container_subtitle  {
+         font-size: 15px;
+      }
+   }
+}

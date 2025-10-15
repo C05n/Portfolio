@@ -1,0 +1,58 @@
+[
+      {
+         "id": 1,
+         "title": "Riding cities",
+         "cover": "/assets/cover/Riding_cities_cover.png",
+         "description": "Site vitrine pour une association sportive promouvant le Skate en région.",
+         "link": "https://c05n.github.io/P1_Riding_Cities/",
+         "stacks": [ "Html", "CSS" ]
+      },
+      {
+         "id": 2,
+         "title": "Booki",
+         "cover": "/assets/cover/Booki_cover.png",
+         "description": "Page d'accueil design et responsive pour une agence de voyage.",
+         "link": "https://c05n.github.io/P2_Booki/",
+         "stacks": [ "Html", "CSS" ]
+      },
+      {
+         "id": 3,
+         "title": "Ohmyfood",
+         "cover": "/assets/cover/Ohmyfood_cover.png",
+         "description": "Site mobile-first et animé, réalisé en HTML et Scss.",
+         "link": "https://c05n.github.io/P3_Ohmyfood/",
+         "stacks": [ "Html", "Sass" ]
+      },
+      {
+         "id": 4,
+         "title": "Print it!",
+         "cover": "/assets/cover/Print_it_cover.png",
+         "description": "Création d'un carousel JavaScript lié à un site déjà conçu.",
+         "link": "https://c05n.github.io/P4_Print_it/",
+         "stacks": [ "Html", "CSS", "JavaScript" ]
+      },
+      {
+         "id": 5,
+         "title": "Sophie Bluel",
+         "cover": "/assets/cover/Sophie_bluel_cover.png",
+         "description": "Création d'une page de connexion pour l'administrateur du site, implémentation de modales pour gérer les projets stockés dans le back-end et ajout d'un système de filtres pour les différents projets.",
+         "link": "https://github.com/C05n/P5_Sophie_bluel",
+         "stacks": [ "Html", "CSS", "JavaScript" ]
+      },
+      {
+         "id": 6,
+         "title": "Kasa",
+         "cover": "/assets/cover/Kasa_cover.png",
+         "description": "Implémentation du front-end pour une application de location immobilière, création de multiple composant réutilisables, et gestion des routes à l'aide de React-router, mise en place de différentes animations déclenchées à l'aide de JavaScript et import des données via un fichier Json.",
+         "link": "https://c05n.github.io/P6_Kasa/",
+         "stacks": [ "React", "React-router", "Scss" ]
+      },
+      {
+         "id": 9,
+         "title": "ArgentBank",
+         "cover": "/assets/cover/Argentbank_cover.png",
+         "description": "Implémentation du front-end pour une application bancaire avec React avec système d'authentification, intégrations des données à l'aide d'appels à une API REST, utilisation de React-router pour la gestion des routes et de Redux pour la gestion des états.",
+         "link": "https://github.com/C05n/Projet_10-ArgentBank",
+         "stacks": [ "React", "React-router", "Redux", "Scss" ]
+      }
+   ]
