@@ -31,6 +31,9 @@ body {
   align-items: center;
   color: var(--font);
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 body::after {
   content: "";
@@ -70,6 +73,7 @@ main {
   }
 
 }
+
 
 
 
