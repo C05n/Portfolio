@@ -4,7 +4,7 @@
    left: 50%;
    transform: translateX(-50%) translateY(-50%);
    .projects_card {
-      width: 700px;
+      width: fit-content;
       background-color: var(--background_alt);
       border-radius: 20px;
       padding: 20px;
@@ -86,6 +86,7 @@
    }
 
 }}
+
 
 
 
