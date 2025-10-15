@@ -18,9 +18,12 @@
    .profiles_container {
       bottom: inherit;
       top: 30px;
+      right: 10px;
+      gap: 10px;
       .profiles_container_icon {
          height: 30px;
          width: 30px;
       }
    }
+
 }
