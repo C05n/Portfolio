@@ -25,7 +25,6 @@ body {
   background-color: var(--background);
   width: 100dvw;
   height: 100dvh;
-  padding: 15px;
   color: var(--font);
   overflow: hidden;
   position: absolute;
@@ -52,6 +51,9 @@ main {
   padding: 30px;
   max-width: 2560px;
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 @keyframes pulse {
   0%{
@@ -73,6 +75,7 @@ main {
   }
 
 }
+
 
 
 
