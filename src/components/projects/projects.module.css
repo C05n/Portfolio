@@ -61,8 +61,6 @@
 }
 @media (max-width: 991px) {
    .projects_container {
-      top: 100px;
-      transform: translateX(-50%) translateY(0);
    .projects_card {
       max-width: 90vw;
       padding: 10px;
@@ -86,6 +84,7 @@
    }
 
 }}
+
 
 
 
