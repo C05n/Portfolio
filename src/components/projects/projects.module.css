@@ -72,7 +72,7 @@
       .projects_card_img {
          height: 60%  !important;
          width: auto !important;
-         max-width: calc(100% - 90px) !important;
+         max-width: calc(90vw - 20px) !important;
       }
       .projects_card_info {
          padding: 20px;
@@ -93,3 +93,4 @@
    }
 
 }}
+
