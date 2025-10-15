@@ -58,9 +58,14 @@ main {
   }
 }
 @media ( max-width: 991px) {
+  body::after {
+    width: 50vw;
+    height: 50vw;
+  }
   main {
     width: calc(100vw - 30px);
     height: calc(100vh - 30px);
     padding: 20px;
   }
+
 }
