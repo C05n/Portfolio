@@ -59,13 +59,14 @@ main {
 }
 @media ( max-width: 991px) {
   main {
-    width: calc(100% - var(--pad_responsive) * 2);
-    height: calc(100% - var(--pad_responsive) * 2);
+    width: calc(100vw - var(--pad_responsive) * 2);
+    height: calc(100vh - var(--pad_responsive) * 2);
     margin: var(--pad_responsive);
     min-height: fit-content;
     padding: var(--pad_responsive);
   }
 }
+
 
 
 
