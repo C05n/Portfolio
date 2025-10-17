@@ -21,7 +21,7 @@ export default function Home() {
    }
   }, []);
   return (
-    <main>
+    <main data-scroll-target=".Projects_container">
       <Nav onToggleVisibility={handleToggleVisibility} />
       <Info />
       <Projects  isVisible={visibilityState.projets} />

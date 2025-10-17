@@ -6,6 +6,9 @@
   --font: #d1d1d1;
   --font_highlight: #ffffff;
   --projects_card_info_bg: #000000c0;
+
+  --pad: 30px;
+  --pad_responsive: 10px;
 }
 * {
   margin: 0;
@@ -23,14 +26,10 @@ a:hover, button:hover {
 }
 body {
   background-color: var(--background);
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   color: var(--font);
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: fixed; 
 }
 body::after {
   content: "";
@@ -38,44 +37,37 @@ body::after {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 600px;
-  height: 600px;
+  width: 50vh;
+  height: 50vh;
   border-radius: 50%;
-  animation: pulse 3s linear alternate infinite;
+  animation: pulse 9s ease-in-out infinite;
   z-index: -1;
 }
 main {
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
+  width: calc(100vw - var(--pad) * 2);
+  height: calc(100vh - var(--pad) * 2);
+  margin: var(--pad);
   background-color: var(--background_alt);
   border: 1px solid var(--foreground);
-  padding: 30px;
-  max-width: 2560px;
+  padding: var(--pad);
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 @keyframes pulse {
-  0%{
+  0%, 50%, 100%{
     box-shadow: 0 0 80px var(--primary), inset 0 0 20px var(--primary);
   }
-  100% {
+  25%, 75% {
     box-shadow: 0 0 400px var(--primary), inset 0 0 80px var(--primary);
   }
 }
 @media ( max-width: 991px) {
-  body::after {
-    width: 50vw;
-    height: 50vw;
-  }
   main {
-    width: calc(100% - 30px);
-    height: calc(100% - 30px);
+    width: calc(100% - var(--pad_responsive) * 2);
+    height: calc(100% - var(--pad_responsive) * 2);
+    margin: var(--pad_responsive);
     min-height: fit-content;
-    padding: 20px;
+    padding: var(--pad_responsive);
   }
-
 }
 
 
