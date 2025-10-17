@@ -29,7 +29,8 @@ body {
   width: 100vw;
   height: 100vh;
   color: var(--font);
-  position: fixed; 
+  overflow: hidden;
+  
 }
 body::after {
   content: "";
@@ -69,6 +70,7 @@ main {
     padding: var(--pad_responsive);
   }
 }
+
 
 
 
