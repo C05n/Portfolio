@@ -8,7 +8,7 @@ import Profiles from "../components/profiles/profiles";
 
 export default function Home() {
   const [visibilityState, setVisibilityState] = useState({
-    projects: false,
+    projects: false
   });
 
   const handleToggleVisibility = (section, visibility) => {
@@ -22,11 +22,12 @@ export default function Home() {
   return (
     <main data-scroll-target=".Projects_container">
       <Nav onToggleVisibility={handleToggleVisibility} />
+      <Projects  isVisible={visibilityState.projets} />
       <div className="info_profiles_container">
         <Info />
         <Profiles />
       </div>
-      <Projects  isVisible={visibilityState.projets} />
     </main>
   )
 }
+
