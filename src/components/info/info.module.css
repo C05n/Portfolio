@@ -1,8 +1,4 @@
 .info_container {
-   position: fixed;
-   bottom: calc(var(--pad) * 2);
-   left: calc(var(--pad) * 2);
-   width: fit-content;
    background: linear-gradient(10deg, var(--font) 5%, var(--primary));
    background-clip: text;
    color: transparent;
@@ -19,9 +15,6 @@
 }
 @media ( max-width: 991px) {
    .info_container {
-      bottom: inherit;
-      top: calc(var(--pad_responsive) * 2);
-      left: calc(var(--pad_responsive) * 2);
       .info_container_title {
          font-size: 30px
       }
@@ -29,4 +22,5 @@
          font-size: 15px;
       }
    }
+
 }
