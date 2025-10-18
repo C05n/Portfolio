@@ -43,18 +43,19 @@ body::after {
   z-index: -1;
 }
 main {
-  width: calc(100vw - var(--pad) * 2);
-  height: calc(100vh - var(--pad) * 2);
+  width: calc(100dvw - var(--pad) * 2);
+  height: calc(100dvh - var(--pad) * 2);
   margin: var(--pad);
   background-color: var(--background_alt);
   border: 1px solid var(--foreground);
   padding: var(--pad);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .info_profiles_container {
-  position: absolute;
-  bottom: var(--pad);
-  width: calc(100% - var(--pad) * 2);
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -70,32 +71,14 @@ main {
 }
 @media ( max-width: 991px) {
   main {
-    width: calc(100dvw - var(--pad_responsive) * 2);
-    height: calc(100dvh - var(--pad_responsive) * 2);
+    width: calc(100vw - var(--pad_responsive) * 2);
+    height: calc(100vh - var(--pad_responsive) * 2);
     margin: var(--pad_responsive);
     min-height: fit-content;
     padding: var(--pad_responsive);
+    flex-direction: column-reverse;
   }
   .info_profiles_container {
-    top: 0;
-    bottom: inherit;
-    width: calc(100% - var(--pad_responsive) * 2);
     align-items: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
