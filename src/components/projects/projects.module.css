@@ -43,6 +43,7 @@
 @media ( max-width: 991px) {
    .projects_container {
       margin-top: 5%;
+      width: calc(100vw - var(--pad) * 2);
       overflow-y: scroll;
       max-height: 75vh;
       padding: var(--pad_responsive);
@@ -57,6 +58,7 @@
       }
    }
 }
+
 
 
 
