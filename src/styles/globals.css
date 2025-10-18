@@ -36,6 +36,8 @@ body::after {
   transform: translateX(-50%) translateY(-50%);
   width: 50vh;
   height: 50vh;
+  max-width: calc(100vw - var(--pad) * 2);
+  max-height: calc(100vw - var(--pad) * 2);
   border-radius: 50%;
   animation: pulse 9s ease-in-out infinite;
   z-index: -1;
@@ -66,6 +68,7 @@ main {
     padding: var(--pad_responsive);
   }
 }
+
 
 
 
