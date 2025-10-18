@@ -2,8 +2,7 @@ import Link from "next/link";
 import style from './profiles.module.css';
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
-export default function Profiles ({ isVisible }) {
-   if (!isVisible) return null;
+export default function Profiles () {
    return (
       <section className={style.profiles_container}>
          <Link href="https://github.com/C05n" target="_blank" className={style.profiles_container_icon}>
@@ -15,3 +14,4 @@ export default function Profiles ({ isVisible }) {
       </section>
    )
 }
+
