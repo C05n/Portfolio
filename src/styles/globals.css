@@ -51,6 +51,15 @@ main {
   padding: var(--pad);
   position: relative;
 }
+.info_profiles_container {
+  position: absolute;
+  bottom: var(--pad);
+  width: calc(100% - var(--pad) * 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 @keyframes pulse {
   0%, 50%, 100%{
     box-shadow: 0 0 80px var(--primary), inset 0 0 20px var(--primary);
@@ -67,7 +76,14 @@ main {
     min-height: fit-content;
     padding: var(--pad_responsive);
   }
+  .info_profiles_container {
+    top: 0;
+    bottom: inherit;
+    width: calc(100% - var(--pad_responsive) * 2);
+    align-items: center;
+  }
 }
+
 
 
 
