@@ -9,7 +9,6 @@ import Profiles from "../components/profiles/profiles";
 export default function Home() {
   const [visibilityState, setVisibilityState] = useState({
     projects: false,
-    profiles: false,
   });
 
   const handleToggleVisibility = (section, visibility) => {
@@ -17,15 +16,17 @@ export default function Home() {
   };
   useEffect(() => {
    if (window.innerWidth <= 991) {
-      setVisibilityState(prev => ({ ...prev, profiles: true, projets: true }));
+      setVisibilityState(prev => ({ ...prev, projets: true }));
    }
   }, []);
   return (
     <main data-scroll-target=".Projects_container">
       <Nav onToggleVisibility={handleToggleVisibility} />
-      <Info />
+      <div className="info_profiles_container">
+        <Info />
+        <Profiles />
+      </div>
       <Projects  isVisible={visibilityState.projets} />
-      <Profiles isVisible={visibilityState.profiles} />
     </main>
   )
 }
